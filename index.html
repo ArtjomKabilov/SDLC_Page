@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SDLC</title>
+    <style>
+  .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+  
+<h1>SDLC</h1>
+<p>Software Development Life Cycle</p>
+<h2>Accordion</h2>
+<button class="accordion">Planning and Requirement analysis</button>
+<div class="panel">
+  <p>Requirements analysis and planning are the keys to the success of an implementation. At this stage, you should set up a management team to define the costs and benefits of the project, select a project team, and set out the detailed stages that will have to be carried out.</p>
+</div>
+
+<button class="accordion">Defining requirement</button>
+<div class="panel">
+  <p>Per BABOK guide, official definition of requirement is: ... “A condition or capability needed by a stakeholder to solve a problem or achieve an objective.” In simpler words, a decision-making process to derive requirements from needs.</p>
+</div>
+
+<button class="accordion">Designing theProduct Architecture</button>
+<div class="panel">
+  <p>Product architecture is the organization (or chunking) of a product's functional elements. It's the ways these elements, or chunks, interact. It plays a significant role in how to design, make, sell, use, and repair a new product offering. Linking to system-level design and the principles of system engineering.</p>
+</div>
+<button class="accordion">Software development</button>
+<div class="panel">
+  <p>Software development refers to a set of computer science activities dedicated to the process of creating, designing, deploying and supporting software. Software itself is the set of instructions or programs that tell a computer what to do. ... Application software (applications or apps) to help users perform tasks.</p>
+</div>
+<button class="accordion">Testing the Product</button>
+<div class="panel">
+  <p>Product testing, also called consumer testing or comparative testing, is a process of measuring the properties or performance of products.
+
+The theory is that since the advent of mass production, manufacturers produce branded products which they assert and advertise to be identical within some technical standard</p>
+</div>
+
+<button class="accordion">Deployment in the Market and Maintenance</button>
+<div class="panel">
+  <p>Software deployment is the process of delivering completed software to the client who ordered it or rolling out the software to consumers. Software deployment should only take place after thorough testing to ensure that all the flaws and bugs have been identified and fixed.</p>
+</div>
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+
+
+</html>
+
+
+
+<!--<ol>
+  <li>Planning and Requirement analysis</li>
+  <li>Defining requirement</li>
+  <li>Designing theProduct Architecture</li>
+  <li>Software development</li>
+  <li>Testing the Product</li>
+  <li>Deployment in the Market and Maintenance</li>
+</ol>-->
